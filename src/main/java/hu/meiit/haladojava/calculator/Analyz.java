@@ -62,7 +62,7 @@ public class Analyz {
             }
             case DIV:
             {
-                result = String.valueOf(Double.valueOf(executor.div(expression.getOperand1(), expression.getOperand2())));
+                result = String.valueOf(executor.div(expression.getOperand1(), expression.getOperand2()));
                 break;
             }
             case MINUS:
