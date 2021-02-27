@@ -62,8 +62,18 @@ public class Analyz {
             }
             case DIV:
             {
-                result = String.valueOf(executor.div(expression.getOperand1(), expression.getOperand2()));
-                break;
+                if(expression.getOperand1()==0 || expression.getOperand2()==0)
+                {
+                   return result="-";
+
+                }
+                else
+                {
+                    result = String.valueOf(executor.div(expression.getOperand1(), expression.getOperand2()));
+                    break;
+                }
+
+
             }
             case MINUS:
             {
