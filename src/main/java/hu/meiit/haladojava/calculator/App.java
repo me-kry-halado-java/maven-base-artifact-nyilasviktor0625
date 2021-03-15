@@ -8,14 +8,15 @@ import java.util.Scanner;
  */
 public class App
 {
+    private static String result;
 
 
     public static void main( String[] args ) {
-       
         try {
             Analyz analyz = new Analyz();
             Input input = new Input();
-            String result = analyz.getErrorResponse();
+             result = analyz.getErrorResponse();
+
             String exprFromStdin = input.getExpressionFromStdin();
             String[] parts = input.parse(exprFromStdin);
             input.assertExpression(parts);
