@@ -11,10 +11,11 @@ public class App
 
 
     public static void main( String[] args ) {
-        Analyz analyz = new Analyz();
-        Input input = new Input();
-        String result = analyz.getErrorResponse();
+       
         try {
+            Analyz analyz = new Analyz();
+            Input input = new Input();
+            String result = analyz.getErrorResponse();
             String exprFromStdin = input.getExpressionFromStdin();
             String[] parts = input.parse(exprFromStdin);
             input.assertExpression(parts);
