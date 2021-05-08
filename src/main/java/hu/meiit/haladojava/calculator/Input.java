@@ -6,12 +6,12 @@ public class Input {
 
 
     public static String [] parse(String expression){
-        String[] returnValue = new String[0];
+        String[] returnValue;
         if(expression.length()>3) {
              returnValue = expression.split(" ");
 
         }
-        else if(expression.length()==3)
+        else
         {returnValue=expression.split("");
         }
         return returnValue;
